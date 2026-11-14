@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Candidatos — RH Jacobo</title>
+<style>
+  .oculto { display:none !important; }
+
+  @media screen {
+  :root {
+    --fondo:#f1f2f6;
+    --texto:#1c1c1e; --secundario:#5f5f66; --lineas:rgba(60,60,67,.14); --suave:rgba(120,120,128,.12);
+    --acento:#0a7aff; --acento-a:#4a9bff; --acento-b:#0a7aff;
+    --verde:#34a56f; --ambar:#ff9f0a; --alerta:#ff3b30;
+    --chip-verde:#1f7a4f; --chip-ambar:#a35f00; --chip-rojo:#d70015; --chip-azul:#0062d1;
+
+    --vidrio:linear-gradient(135deg, rgba(255,255,255,.62) 0%, rgba(255,255,255,.22) 55%, rgba(255,255,255,.38) 100%);
+    --vidrio-borde:rgba(255,255,255,.7);
+    --vidrio-sombra:inset 0 1.5px 0 rgba(255,255,255,.95), inset 0 -1px 0 rgba(255,255,255,.35), inset 1.5px 0 0 rgba(255,255,255,.55), inset 0 0 22px rgba(255,255,255,.28), 0 14px 44px rgba(40,60,130,.14), 0 2px 8px rgba(40,60,130,.06);
+    --btn2-fondo:linear-gradient(135deg, rgba(255,255,255,.85), rgba(255,255,255,.5));
+    --btn2-borde:rgba(255,255,255,.7);
+    --btn2-sombra:inset 0 1px 0 #fff, 0 4px 14px rgba(40,60,130,.1);
+    --campo:rgba(255,255,255,.55);
+    --campo-sombra:inset 0 1px 2px rgba(60,60,67,.12), inset 0 0 0 1px rgba(60,60,67,.06);
+    --foco:0 0 0 3px rgba(10,122,255,.25);
+    --flecha:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%235f5f66' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fondo:#0b0c10;
+      --texto:#f2f2f7; --secundario:#a1a1aa; --lineas:rgba(255,255,255,.1); --suave:rgba(120,120,128,.24);
+      --acento:#3d9bff; --acento-a:#6fb4ff; --acento-b:#3d9bff;
+      --chip-verde:#5fd39a; --chip-ambar:#ffc261; --chip-rojo:#ff7a72; --chip-azul:#7ab8ff;
+      --vidrio:linear-gradient(135deg, rgba(255,255,255,.12) 0%, rgba(255,255,255,.04) 55%, rgba(255,255,255,.08) 100%);
+      --vidrio-borde:rgba(255,255,255,.12);
+      --vidrio-sombra:inset 0 1px 0 rgba(255,255,255,.1), 0 14px 44px rgba(0,0,0,.5);
+      --btn2-fondo:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.06));
+      --btn2-borde:rgba(255,255,255,.12);
+      --btn2-sombra:inset 0 1px 0 rgba(255,255,255,.12), 0 4px 14px rgba(0,0,0,.35);
+      --campo:rgba(255,255,255,.07);
+      --campo-sombra:inset 0 1px 2px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+      --foco:0 0 0 3px rgba(61,155,255,.35);
+      --flecha:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%23a1a1aa' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fondo:#0b0c10;
+    --texto:#f2f2f7; --secundario:#a1a1aa; --lineas:rgba(255,255,255,.1); --suave:rgba(120,120,128,.24);
+    --acento:#3d9bff; --acento-a:#6fb4ff; --acento-b:#3d9bff;
+    --chip-verde:#5fd39a; --chip-ambar:#ffc261; --chip-rojo:#ff7a72; --chip-azul:#7ab8ff;
+    --vidrio:linear-gradient(135deg, rgba(255,255,255,.12) 0%, rgba(255,255,255,.04) 55%, rgba(255,255,255,.08) 100%);
+    --vidrio-borde:rgba(255,255,255,.12);
+    --vidrio-sombra:inset 0 1px 0 rgba(255,255,255,.1), 0 14px 44px rgba(0,0,0,.5);
+    --btn2-fondo:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.06));
+    --btn2-borde:rgba(255,255,255,.12);
+    --btn2-sombra:inset 0 1px 0 rgba(255,255,255,.12), 0 4px 14px rgba(0,0,0,.35);
+    --campo:rgba(255,255,255,.07);
+    --campo-sombra:inset 0 1px 2px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+    --foco:0 0 0 3px rgba(61,155,255,.35);
+    --flecha:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%23a1a1aa' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+    color-scheme:dark;
+  }
+
+  :root { --fuerte:linear-gradient(135deg, rgba(255,255,255,.9), rgba(255,255,255,.72) 55%, rgba(255,255,255,.82)); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fuerte:linear-gradient(135deg, rgba(40,42,50,.92), rgba(28,29,35,.86)); } }
+  :root[data-theme="dark"] { --fuerte:linear-gradient(135deg, rgba(40,42,50,.92), rgba(28,29,35,.86)); }
+
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--fondo); color:var(--texto);
+    font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size:15px; line-height:1.45; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  svg.ico { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; flex:none; }
+
+  /* ---------- Navegación: celular (barra inferior) ---------- */
+  header { padding:22px 18px 4px; text-align:center; }
+  header h1 { margin:0; font-size:22px; font-weight:700; letter-spacing:-.02em; line-height:1.1; }
+  header h1 small { display:block; margin-top:4px; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--secundario); }
+  #usuarioBox {
+    position:fixed; left:12px; right:12px; bottom:12px; z-index:20;
+    display:flex; justify-content:space-around; align-items:center; gap:4px; padding:8px;
+    border-radius:999px; background:var(--fuerte); border:1px solid var(--vidrio-borde);
+    box-shadow:var(--vidrio-sombra); -webkit-backdrop-filter:blur(22px) saturate(180%); backdrop-filter:blur(22px) saturate(180%);
+  }
+  #usuarioNombre { display:none; }
+  #usuarioBox button {
+    flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:6px 4px;
+    background:none; border:0; border-radius:999px; color:var(--secundario); font:inherit; font-size:10.5px; font-weight:600; cursor:pointer;
+    transition:background .25s ease, color .25s ease, transform .12s ease;
+  }
+  #usuarioBox button:hover { color:var(--acento); }
+  #usuarioBox button:active { transform:scale(.97); }
+
+  main { max-width:1200px; margin:0 auto; padding:16px 16px 120px; }
+
+  /* ---------- Navegación: escritorio (barra lateral) ---------- */
+  @media (min-width:900px) {
+    header {
+      position:fixed; top:16px; left:16px; bottom:16px; width:248px; z-index:20; text-align:left;
+      padding:26px 14px 14px; border-radius:32px; display:flex; flex-direction:column;
+      background:var(--vidrio); border:1px solid var(--vidrio-borde); box-shadow:var(--vidrio-sombra);
+      -webkit-backdrop-filter:blur(22px) saturate(180%); backdrop-filter:blur(22px) saturate(180%);
+    }
+    header h1 { padding:0 10px 22px; }
+    #usuarioBox {
+      position:static; flex-direction:column; align-items:stretch; justify-content:flex-start; flex:1;
+      padding:0; background:none; border:0; box-shadow:none; -webkit-backdrop-filter:none; backdrop-filter:none; border-radius:0;
+    }
+    #usuarioBox button { flex:none; flex-direction:row; gap:12px; padding:11px 14px; font-size:15px; font-weight:600; color:var(--texto); }
+    #usuarioBox button:hover { background:rgba(10,122,255,.13); color:var(--acento); }
+    #usuarioNombre {
+      display:flex; align-items:center; gap:10px; order:9; margin-top:auto; padding:12px 14px;
+      border-radius:999px; background:var(--suave); font-size:14px; font-weight:600; color:var(--secundario);
+    }
+    #usuarioNombre::before { content:'👤'; }
+    main { padding:28px 32px 48px 296px; max-width:none; }
+  }
+
+  /* ---------- Título del panel ---------- */
+  .titulo-panel { margin:6px 0 20px; }
+  .titulo-panel h2 { margin:0; font-size:clamp(30px, 1.6vw + 22px, 36px); font-weight:700; letter-spacing:-.03em; line-height:1.1; }
+  .kw { color:var(--acento); }
+  .titulo-panel p { margin:8px 0 0; color:var(--secundario); }
+
+  /* ---------- Vidrio ---------- */
+  #login, .convocatoria, .etapa-chip, #lista tr, thead tr {
+    background:var(--vidrio); border:1px solid var(--vidrio-borde); box-shadow:var(--vidrio-sombra);
+  }
+
+  /* ---------- Campos y botones ---------- */
+  input, select, textarea {
+    padding:11px 12px; border:0; border-radius:14px; font:inherit; font-size:15px; color:var(--texto);
+    background:var(--campo); box-shadow:var(--campo-sombra); transition:box-shadow .25s ease;
+  }
+  input::placeholder, textarea::placeholder { color:var(--secundario); opacity:.7; }
+  select { -webkit-appearance:none; appearance:none; padding-right:36px; background:var(--flecha) no-repeat right 14px center / 12px 8px, var(--campo); }
+  select option { color:#1c1c1e; }
+  input:focus, select:focus, textarea:focus { outline:none; box-shadow:var(--campo-sombra), var(--foco); }
+
+  button.prim, #login button {
+    padding:11px 20px; border:0; border-radius:999px; cursor:pointer; font:inherit; font-size:15px; font-weight:650; color:#fff;
+    background:linear-gradient(180deg, var(--acento-a), var(--acento-b));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px rgba(10,122,255,.28);
+    transition:transform .12s ease, filter .12s ease, opacity .25s ease;
+  }
+  button.prim:active, .wa:active, .etapa-chip:active, #lista tr:active { transform:scale(.97); filter:brightness(.94); }
+  button.prim:disabled { opacity:.6; cursor:wait; }
+  button:focus-visible, a:focus-visible { outline:none; box-shadow:var(--foco); }
+
+  .error { margin-top:12px; padding:12px 16px; border-radius:16px; background:rgba(255,59,48,.14); color:var(--chip-rojo); font-size:14px; font-weight:600; }
+  .error:empty { display:none; }
+
+  /* ---------- Login ---------- */
+  #login { max-width:380px; margin:40px auto; padding:30px 26px; border-radius:26px; }
+  #login h2 { margin:0 0 20px; font-size:clamp(30px, 1.6vw + 22px, 36px); font-weight:700; letter-spacing:-.03em; line-height:1.1; text-align:center; }
+  #login input { width:100%; margin-bottom:12px; }
+  #login button { width:100%; margin-top:4px; }
+
+  /* ---------- Convocatoria ---------- */
+  .convocatoria { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-radius:26px; padding:14px 14px 14px 20px; margin-bottom:16px; }
+  .convocatoria .estado { display:inline-block; margin-left:4px; padding:4px 12px; border-radius:999px; font-size:13px; font-weight:700; }
+  .convocatoria .estado.abierta { background:rgba(52,165,111,.18); color:var(--chip-verde); }
+  .convocatoria .estado.cerrada { background:rgba(255,59,48,.16); color:var(--chip-rojo); }
+
+  /* ---------- Etapas ---------- */
+  .etapas { display:grid; grid-template-columns:repeat(auto-fill, minmax(118px, 1fr)); gap:10px; margin-bottom:16px; }
+  .etapa-chip { border-radius:22px; padding:12px 16px; cursor:pointer; transition:transform .12s ease, filter .12s ease, background .25s ease; }
+  .etapa-chip b { display:block; font-size:24px; font-weight:700; letter-spacing:-.02em; }
+  .etapa-chip span { font-size:13px; font-weight:600; color:var(--secundario); }
+  .etapa-chip.activa { background:linear-gradient(180deg, var(--acento-a), var(--acento-b)); border-color:transparent; color:#fff; box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px rgba(10,122,255,.28); }
+  .etapa-chip.activa span { color:rgba(255,255,255,.85); }
+
+  /* ---------- Filtros ---------- */
+  .filtros { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px; }
+  .buscador { flex:2 1 240px; position:relative; display:flex; }
+  .buscador svg { position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--secundario); width:18px; height:18px; pointer-events:none; }
+  .buscador input { width:100%; border-radius:999px; padding-left:42px; }
+  .filtros select {
+    flex:1 1 150px; min-width:0; border-radius:999px; font-weight:600; color:var(--acento);
+    background:var(--flecha) no-repeat right 14px center / 12px 8px, var(--btn2-fondo);
+    border:1px solid var(--btn2-borde); box-shadow:var(--btn2-sombra);
+  }
+
+  /* ---------- Lista de candidatos (renglones de vidrio) ---------- */
+  table, thead, tbody, tr, th, td { display:block; }
+  table { border-collapse:separate; }
+  thead tr, #lista tr {
+    display:grid; align-items:center; gap:4px 12px;
+    grid-template-columns:70px 92px minmax(0,1.7fr) minmax(0,1.4fr) 90px 56px 80px 118px;
+    padding:12px 16px; border-radius:20px; margin-bottom:8px;
+  }
+  thead tr { background:none; border:0; box-shadow:none; padding-top:0; padding-bottom:4px; margin-bottom:2px; }
+  th { font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--secundario); text-align:left; }
+  #lista tr { cursor:pointer; font-size:14.5px; transition:transform .12s ease, filter .12s ease; }
+  #lista tr:hover { filter:brightness(1.02); }
+  #lista td { min-width:0; overflow-wrap:anywhere; }
+  #lista td:nth-child(3) { font-weight:650; }
+  #lista td:nth-child(2) { color:var(--secundario); font-size:13.5px; }
+  #lista td.vacio { grid-column:1 / -1; text-align:center; padding:20px; color:var(--secundario); }
+  #lista tr:has(td.vacio) { cursor:default; }
+
+  @media (max-width:899px) {
+    thead { display:none; }
+    #lista tr {
+      grid-template-columns:auto 1fr auto; padding:14px 16px;
+      grid-template-areas:"pts nombre etapa" "pts puesto etapa" "pts meta meta";
+    }
+    #lista td:nth-child(1) { grid-area:pts; align-self:start; }
+    #lista td:nth-child(3) { grid-area:nombre; }
+    #lista td:nth-child(4) { grid-area:puesto; color:var(--secundario); font-size:13.5px; }
+    #lista td:nth-child(8) { grid-area:etapa; align-self:start; justify-self:end; }
+    #lista td:nth-child(2) { grid-area:meta; }
+    #lista td:nth-child(5) { display:none; }
+    #lista td.col-opc { display:none; }
+    
+  }
+  @media (min-width:900px) and (max-width:1100px) {
+    thead tr, #lista tr { grid-template-columns:64px 88px minmax(0,1.6fr) minmax(0,1.3fr) 80px 112px; }
+    .col-opc { display:none !important; }
+  }
+
+  /* ---------- Chips ---------- */
+  .badge { display:inline-block; padding:4px 11px; border-radius:999px; font-size:12.5px; font-weight:700; white-space:nowrap; }
+  .b-Nuevo { background:rgba(10,122,255,.15); color:var(--chip-azul); }
+  .b-En-revisión { background:rgba(255,159,10,.18); color:var(--chip-ambar); }
+  .b-Entrevista { background:rgba(10,122,255,.15); color:var(--chip-azul); }
+  .b-Contratado { background:rgba(52,165,111,.18); color:var(--chip-verde); }
+  .b-Descartado { background:rgba(255,59,48,.15); color:var(--chip-rojo); }
+  .si { color:var(--chip-verde); font-weight:650; } .no { color:var(--chip-rojo); font-weight:650; }
+  .rep, .nocumple { display:inline-block; margin-left:6px; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:700; vertical-align:1px; white-space:nowrap; }
+  .rep { background:rgba(255,159,10,.18); color:var(--chip-ambar); }
+  .nocumple { background:rgba(255,59,48,.15); color:var(--chip-rojo); }
+  .pts { display:inline-block; min-width:52px; text-align:center; padding:4px 10px; border-radius:999px; font-size:13px; font-weight:700; }
+  .pts-alto { background:rgba(52,165,111,.18); color:var(--chip-verde); }
+  .pts-medio { background:rgba(255,159,10,.18); color:var(--chip-ambar); }
+  .pts-bajo { background:rgba(255,59,48,.15); color:var(--chip-rojo); }
+
+  /* ---------- Ventana de detalle / perfil ---------- */
+  #fondo { position:fixed; inset:0; z-index:30; background:rgba(24,28,44,.26); -webkit-backdrop-filter:blur(22px) saturate(180%); backdrop-filter:blur(22px) saturate(180%); animation:aparecer-fondo .3s ease; }
+  #detalle {
+    position:fixed; z-index:31; top:12px; right:12px; bottom:12px; width:min(500px, calc(100% - 24px));
+    overflow-y:auto; padding:24px 22px; border-radius:32px;
+    background:var(--fuerte); border:1px solid var(--vidrio-borde); box-shadow:0 30px 80px rgba(20,30,80,.28);
+    animation:aparecer .3s ease;
+  }
+  @keyframes aparecer { from { opacity:0; transform:translateY(8px) scale(.98); } to { opacity:1; transform:none; } }
+  @keyframes aparecer-fondo { from { opacity:0; } to { opacity:1; } }
+  #detalle h2 { margin:0 0 4px; font-size:24px; font-weight:700; letter-spacing:-.02em; padding-right:44px; }
+  #detalle .sub { color:var(--secundario); font-size:13.5px; margin-bottom:16px; }
+  #detalle dl { display:grid; grid-template-columns:150px 1fr; gap:9px 12px; font-size:14.5px; margin:0 0 18px; padding:16px; border-radius:20px; background:var(--suave); }
+  #detalle dt { color:var(--secundario); font-weight:600; font-size:13.5px; }
+  #detalle dd { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; }
+  #detalle label { display:block; font-size:13px; font-weight:700; color:var(--secundario); margin:14px 0 7px; }
+  #detalle select, #detalle textarea { width:100%; }
+  #detalle textarea { min-height:100px; resize:vertical; }
+  .cerrar {
+    position:absolute; top:18px; right:18px; width:36px; height:36px; border-radius:999px; border:1px solid var(--btn2-borde);
+    background:var(--btn2-fondo); box-shadow:var(--btn2-sombra); color:var(--secundario); font-size:22px; line-height:1; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; transition:transform .12s ease;
+  }
+  .cerrar:active { transform:scale(.94); }
+  .anteriores { background:rgba(255,159,10,.14); border-radius:16px; padding:12px 14px; font-size:14px; margin-bottom:14px; color:var(--texto); }
+  .anteriores b { display:block; margin-bottom:4px; color:var(--chip-ambar); }
+  .desglose { background:var(--suave); border-radius:20px; padding:14px 16px; font-size:14px; margin-bottom:14px; }
+  .desglose div { display:flex; justify-content:space-between; gap:10px; padding:3px 0; }
+  .desglose div span:last-child { font-variant-numeric:tabular-nums; color:var(--secundario); }
+  .desglose .titulo { font-weight:700; margin-bottom:6px; align-items:center; }
+  .desglose .titulo span:last-child { color:inherit; }
+  .acciones { display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+  .acciones > * { flex:1 1 auto; text-align:center; }
+  .wa {
+    display:inline-block; padding:11px 18px; border-radius:999px; color:#fff; text-decoration:none; font-weight:650;
+    background:linear-gradient(180deg, #47b880, #34a56f); box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px rgba(52,165,111,.28);
+    transition:transform .12s ease, filter .12s ease;
+  }
+  .meta { font-size:12.5px; color:var(--secundario); margin-top:12px; }
+  .sueldos { width:100%; margin:10px 0 18px; }
+  .sueldos tr { display:grid; grid-template-columns:minmax(0,1.3fr) 1fr 1fr; gap:8px; align-items:center; margin-bottom:8px; }
+  .sueldos td { font-size:14px; }
+  .sueldos input { width:100%; }
+  #pGuardar { width:100%; }
+
+  @media (max-width:600px) {
+    #detalle { top:auto; max-height:calc(100% - 24px); }
+    #detalle dl { grid-template-columns:1fr; gap:2px; }
+    #detalle dd { margin-bottom:8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition:none !important; animation:none !important; }
+    button.prim:active, .wa:active, .etapa-chip:active, #lista tr:active, #usuarioBox button:active, .cerrar:active { transform:none; }
+  }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Jacobo<small>Candidatos — RH</small></h1>
+  <div id="usuarioBox" class="oculto">
+    <span id="usuarioNombre"></span>
+    <button onclick="abrirPerfil()"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg><span>Perfil</span></button>
+    <button onclick="cargar()"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg><span>Actualizar</span></button>
+    <button onclick="salir()"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 16l-4-4 4-4"/><path d="M6 12h10"/></svg><span>Salir</span></button>
+  </div>
+</header>
+
+<main>
+  <form id="login">
+    <h2>Acceso RH</h2>
+    <input id="usuario" placeholder="Usuario" autocomplete="username">
+    <input id="contrasena" type="password" placeholder="Contraseña" autocomplete="current-password">
+    <button class="prim" id="btnLogin">Entrar</button>
+    <div class="error" id="loginError"></div>
+  </form>
+
+  <section id="panel" class="oculto">
+    <div class="titulo-panel">
+      <h2>Panel de <span class="kw">candidatos</span></h2>
+      <p>Solicitudes recibidas, ordenadas por coincidencia con el perfil.</p>
+    </div>
+    <div class="convocatoria">
+      <span>Convocatoria: <span class="estado" id="convEstado"></span></span>
+      <button class="prim" id="convBtn" onclick="cambiarConvocatoria()"></button>
+    </div>
+    <div class="etapas" id="etapas"></div>
+    <div class="filtros">
+      <label class="buscador"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg><input id="buscar" placeholder="Buscar por nombre, teléfono o folio"></label>
+      <select id="fPuesto"><option value="">Todos los puestos</option></select>
+      <select id="fSucursal"><option value="">Todas las sucursales</option></select>
+      <select id="orden"><option value="perfil">Ordenar por perfil</option><option value="fecha">Más recientes</option></select>
+    </div>
+    <table>
+      <thead><tr>
+        <th>Perfil</th><th>Fecha</th><th>Nombre</th><th>Puesto</th><th>Sucursal</th>
+        <th class="col-opc">Exp.</th><th class="col-opc">Inicio inmediato</th><th>Etapa</th>
+      </tr></thead>
+      <tbody id="lista"></tbody>
+    </table>
+  </section>
+</main>
+
+<div id="fondo" class="oculto" onclick="cerrarDetalle()"></div>
+<aside id="detalle" class="oculto"></aside>
+
+<script>
+const API_URL = 'https://script.google.com/macros/s/AKfycbzTvsmXs-4g7eOthttBpAcDPyZnyR0nlIsBQBoUuWoZnwPgpOwS42LJsDv-RVk8_SJaRQ/exec';
+const ETAPAS = ['Nuevo', 'En revisión', 'Entrevista', 'Contratado', 'Descartado'];
+const PUESTOS = ['Embajador(a) / Atención a cliente', 'Barista', 'Panadero(a)', 'Pastelero(a)', 'Ayudante de producción', 'Limpieza'];
+const PRODUCCION = ['Panadero(a)', 'Pastelero(a)'];
+let sueldos = {};
+
+/* Perfil del colaborador ideal.
+   Indispensables: fines de semana y festivos (y experiencia en producción).
+   Cada criterio da una fracción (0 a 1) de su peso; si falta el dato, no cuenta. */
+function evaluar(c) {
+  const prod = PRODUCCION.includes(c.Puesto);
+  const fallas = [];
+  if (c.FinesSemana === 'No') fallas.push('No trabaja fines de semana');
+  if (c.Festivos === 'No') fallas.push('No trabaja festivos');
+  if (prod && c.Experiencia === 'No') fallas.push('Sin experiencia (producción)');
+
+  const dias = c.Dias ? c.Dias.split(',').length : null;
+  const turnos = c.Turnos || '';
+  const s = sueldos[c.Puesto], pide = parseFloat(String(c.SueldoEsperado).replace(/[^\d.]/g, ''));
+  const criterios = [
+    ['Experiencia', prod ? 30 : 10, c.Experiencia ? (c.Experiencia === 'Sí' ? 1 : 0) : null],
+    ['Inicio inmediato', prod ? 5 : 10, c.InicioInmediato ? (c.InicioInmediato === 'Sí' ? 1 : 0) : null],
+    ['Turnos', prod ? 5 : 10, turnos ? (/Cualquiera/.test(turnos) || (/Mañana/.test(turnos) && /Tarde/.test(turnos)) ? 1 : .5) : null],
+    ['Días disponibles', prod ? 5 : 15, dias ? Math.min(dias / 6, 1) : null],
+    ['Cercanía', 20, { 'Menos de 20 min': 1, '20 a 40 min': .65, '40 min a 1 hora': .3, 'Más de 1 hora': 0 }[c.TiempoTraslado] ?? null],
+    ['Transporte', 10, c.Transporte ? ({ 'Carro propio': 1, 'Moto': 1, 'Caminando / bicicleta': .5 }[c.Transporte] ?? .25) : null],
+    ['Escolaridad (prepa mínimo)', 5, c.Escolaridad ? ({ 'Preparatoria / Bachillerato': 1, 'Carrera técnica': 1, 'Licenciatura': 1, 'Otro': .5 }[c.Escolaridad] ?? 0) : null],
+    ['Referencias', 5, c.Referencias !== undefined ? (c.Referencias ? 1 : 0) : null],
+    ['Trabaja actualmente', 5, c.TrabajaActualmente ? (c.TrabajaActualmente === 'Sí' ? 1 : 0) : null],
+    ['Sueldo esperado', 10, s && s.max && pide ? (pide <= s.max ? 1 : pide <= s.max * 1.1 ? .5 : 0) : null]
+  ];
+  let ganado = 0, posible = 0;
+  const detalle = [];
+  criterios.forEach(([nombre, peso, f]) => {
+    if (f === null) return;
+    posible += peso; ganado += peso * f;
+    detalle.push([nombre, Math.round(peso * f), peso]);
+  });
+  let pct = posible ? ganado / posible * 100 : 0;
+  if (c.FamiliarJacobo === 'Sí') { pct -= 10; detalle.push(['Familiar en Jacobo', -10, null]); }
+  if (c.Compromisos === 'Sí') { pct -= 15; detalle.push(['Compromisos fijos', -15, null]); }
+  return { pct: Math.max(0, Math.round(pct)), fallas, detalle };
+}
+
+const ptsHtml = ev => `<span class="pts ${ev.pct >= 75 ? 'pts-alto' : ev.pct >= 50 ? 'pts-medio' : 'pts-bajo'}">${ev.pct}%</span>`;
+
+let cred = null;
+let candidatos = [];
+let filtroEtapa = '';
+let abierta = true;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sn = v => v === 'Sí' ? '<span class="si">Sí</span>' : v === 'No' ? '<span class="no">No</span>' : esc(v);
+const badge = e => `<span class="badge b-${esc(e).replace(/ /g,'-')}">${esc(e)}</span>`;
+
+async function api(body) {
+  const r = await fetch(API_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ ...body, ...cred })
+  }).then(r => r.json());
+  if (!r.ok) throw new Error(r.error || 'Error');
+  return r;
+}
+
+$('login').addEventListener('submit', async e => {
+  e.preventDefault();
+  $('loginError').textContent = '';
+  cred = { usuario: $('usuario').value.trim(), contrasena: $('contrasena').value };
+  $('btnLogin').disabled = true;
+  try {
+    await cargar();
+    $('login').classList.add('oculto');
+    $('panel').classList.remove('oculto');
+    $('usuarioBox').classList.remove('oculto');
+    $('usuarioNombre').textContent = cred.usuario;
+  } catch (err) {
+    cred = null;
+    $('loginError').textContent = err.message;
+  } finally {
+    $('btnLogin').disabled = false;
+  }
+});
+
+function salir() {
+  cred = null; candidatos = [];
+  $('contrasena').value = '';
+  $('panel').classList.add('oculto');
+  $('usuarioBox').classList.add('oculto');
+  $('login').classList.remove('oculto');
+}
+
+async function cargar() {
+  const r = await api({ accion: 'listar' });
+  candidatos = r.candidatos;
+  abierta = r.abierta;
+  sueldos = r.sueldos || {};
+  pintarConvocatoria();
+  llenarFiltro('fPuesto', 'Puesto');
+  llenarFiltro('fSucursal', 'Sucursal');
+  pintar();
+}
+
+function pintarConvocatoria() {
+  $('convEstado').textContent = abierta ? 'Abierta' : 'Cerrada';
+  $('convEstado').className = 'estado ' + (abierta ? 'abierta' : 'cerrada');
+  $('convBtn').textContent = abierta ? 'Cerrar convocatoria' : 'Abrir convocatoria';
+}
+
+async function cambiarConvocatoria() {
+  const nueva = !abierta;
+  if (!confirm(nueva ? '¿Abrir la convocatoria? El formulario volverá a recibir solicitudes.'
+                     : '¿Cerrar la convocatoria? El formulario mostrará que no hay vacantes.')) return;
+  $('convBtn').disabled = true;
+  try {
+    const r = await api({ accion: 'convocatoria', abierta: nueva });
+    abierta = r.abierta;
+    pintarConvocatoria();
+  } catch (err) {
+    alert(err.message);
+  } finally {
+    $('convBtn').disabled = false;
+  }
+}
+
+// Otras solicitudes con el mismo teléfono, más antiguas que esta
+function anteriores(c) {
+  return candidatos.filter(x => x.Telefono === c.Telefono && x.ID !== c.ID && x.Fecha < c.Fecha);
+}
+
+function llenarFiltro(id, campo) {
+  const sel = $(id), actual = sel.value;
+  const valores = [...new Set(candidatos.map(c => c[campo]).filter(Boolean))].sort();
+  sel.length = 1;
+  valores.forEach(v => sel.add(new Option(v, v)));
+  sel.value = valores.includes(actual) ? actual : '';
+}
+
+function pintar() {
+  const q = $('buscar').value.trim().toLowerCase();
+  const p = $('fPuesto').value, s = $('fSucursal').value;
+  const base = candidatos.filter(c =>
+    (!p || c.Puesto === p) && (!s || c.Sucursal === s) &&
+    (!q || [c.Nombre, c.Telefono, c.ID].some(v => String(v).toLowerCase().includes(q))));
+
+  $('etapas').innerHTML = [['', 'Todas', base.length], ...ETAPAS.map(e => [e, e, base.filter(c => c.Etapa === e).length])]
+    .map(([val, txt, n]) => `<div class="etapa-chip ${filtroEtapa === val ? 'activa' : ''}" data-e="${esc(val)}"><b>${n}</b><span>${esc(txt)}</span></div>`).join('');
+  $('etapas').querySelectorAll('.etapa-chip').forEach(ch => ch.onclick = () => { filtroEtapa = ch.dataset.e; pintar(); });
+
+  const lista = base.filter(c => !filtroEtapa || c.Etapa === filtroEtapa)
+    .map(c => ({ c, ev: evaluar(c) }));
+  if ($('orden').value === 'perfil') {
+    lista.sort((a, b) => (a.ev.fallas.length > 0) - (b.ev.fallas.length > 0) || b.ev.pct - a.ev.pct);
+  }
+  $('lista').innerHTML = lista.length ? lista.map(({ c, ev }) => `
+    <tr data-id="${esc(c.ID)}">
+      <td>${ptsHtml(ev)}</td>
+      <td>${esc(c.Fecha.slice(0, 10))}</td>
+      <td>${esc(c.Nombre)}${ev.fallas.length ? '<span class="nocumple">No cumple indispensables</span>' : ''}${anteriores(c).length ? '<span class="rep">Ya aplicó antes</span>' : ''}</td>
+      <td>${esc(c.Puesto)}</td>
+      <td>${esc(c.Sucursal)}</td>
+      <td class="col-opc">${sn(c.Experiencia)}</td>
+      <td class="col-opc">${sn(c.InicioInmediato)}</td>
+      <td>${badge(c.Etapa)}</td>
+    </tr>`).join('') : '<tr><td colspan="8" class="vacio">Sin candidatos con estos filtros</td></tr>';
+  $('lista').querySelectorAll('tr[data-id]').forEach(tr => tr.onclick = () => abrirDetalle(tr.dataset.id));
+}
+
+['buscar', 'fPuesto', 'fSucursal', 'orden'].forEach(id => $(id).addEventListener('input', pintar));
+
+function abrirDetalle(id) {
+  const c = candidatos.find(x => x.ID === id);
+  if (!c) return;
+  const filas = [
+    ['Teléfono', esc(c.Telefono)],
+    ['Colonia', esc(c.Colonia) || '—'],
+    ['Tiempo a la sucursal', esc(c.TiempoTraslado) || '—'],
+    ['Transporte', esc(c.Transporte) || '—'],
+    ['Escolaridad', esc(c.Escolaridad) || '—'],
+    ['Trabaja actualmente', sn(c.TrabajaActualmente) || '—'],
+    ['Puesto', esc(c.Puesto)],
+    ['Sucursal', esc(c.Sucursal)],
+    ['Experiencia', sn(c.Experiencia)],
+    ['Detalle experiencia', esc(c.ExperienciaDetalle) || '—'],
+    ['Último trabajo', esc(c.UltimoTrabajo) || '—'],
+    ['Referencias', esc(c.Referencias) || '—'],
+    ['Sueldo esperado', esc(c.SueldoEsperado) || '—'],
+    ['Turnos', esc(c.Turnos)],
+    ['Días', esc(c.Dias)],
+    ['Compromisos fijos', esc(c.Compromisos) || '—'],
+    ['Inicio inmediato', sn(c.InicioInmediato)],
+    ['Tarjeta de salud', sn(c.TarjetaSalud)],
+    ['Fines de semana', sn(c.FinesSemana)],
+    ['Festivos / temporada', sn(c.Festivos)],
+    ['Familiar en Jacobo', c.FamiliarJacobo === 'Sí' ? 'Sí' + (c.FamiliarNombre ? ' — ' + esc(c.FamiliarNombre) : '') : sn(c.FamiliarJacobo) || '—'],
+    ['Cómo se enteró', esc(c.Medio) || '—'],
+    ['Comentarios', esc(c.Comentarios) || '—']
+  ];
+  const prev = anteriores(c);
+  const ev = evaluar(c);
+  const nombre1 = c.Nombre.split(' ')[0];
+  const msg = `Hola ${nombre1}, te escribimos de Pastelería y Panadería Jacobo. Recibimos tu solicitud para el puesto de ${c.Puesto}` +
+    (c.Sucursal === 'Cualquiera' ? '' : ` en Sucursal ${c.Sucursal}`) +
+    ` y nos gustaría invitarte a una entrevista. ¿Qué día y horario te quedan bien?`;
+  $('detalle').innerHTML = `
+    <button class="cerrar" onclick="cerrarDetalle()" aria-label="Cerrar">×</button>
+    <h2>${esc(c.Nombre)}</h2>
+    <div class="sub">${esc(c.ID)} · ${esc(c.Fecha)}</div>
+    ${prev.length ? `<div class="anteriores"><b>Ya aplicó antes</b>${prev.map(p =>
+      `${esc(p.Fecha.slice(0, 10))} · ${esc(p.Puesto)} · ${esc(p.Etapa)}`).join('<br>')}</div>` : ''}
+    <div class="desglose">
+      <div class="titulo"><span>Coincidencia con el perfil</span>${ptsHtml(ev)}</div>
+      ${ev.fallas.map(f => `<div class="no">✕ ${esc(f)}</div>`).join('')}
+      ${ev.detalle.map(([n, p, max]) => `<div><span>${esc(n)}</span><span>${max === null ? p : p + ' / ' + max}</span></div>`).join('')}
+    </div>
+    <dl>${filas.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+    <label for="dEtapa">Etapa</label>
+    <select id="dEtapa">${ETAPAS.map(e => `<option ${e === c.Etapa ? 'selected' : ''}>${e}</option>`).join('')}</select>
+    <label for="dNotas">Notas de RH</label>
+    <textarea id="dNotas">${esc(c.Notas)}</textarea>
+    <div class="acciones">
+      <button class="prim" id="dGuardar">Guardar</button>
+      <a class="wa" href="https://wa.me/52${esc(c.Telefono)}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">Invitar a entrevista por WhatsApp</a>
+    </div>
+    <div class="error" id="dError"></div>
+    ${c.ActualizadoPor ? `<div class="meta">Última actualización: ${esc(c.ActualizadoPor)} · ${esc(c.FechaActualizacion)}</div>` : ''}`;
+  $('dGuardar').onclick = () => guardar(c);
+  $('fondo').classList.remove('oculto');
+  $('detalle').classList.remove('oculto');
+}
+
+function abrirPerfil() {
+  $('detalle').innerHTML = `
+    <button class="cerrar" onclick="cerrarDetalle()" aria-label="Cerrar">×</button>
+    <h2>Perfil</h2>
+    <div class="sub">Sueldo semanal por puesto. Se usa para calificar el sueldo que pide cada candidato; si un puesto se deja vacío, el sueldo no cuenta en su puntaje.</div>
+    <table class="sueldos">
+      <tr><td></td><td><b>Mínimo</b></td><td><b>Máximo</b></td></tr>
+      ${PUESTOS.map((p, i) => `<tr><td>${esc(p)}</td>
+        <td><input type="number" min="0" id="smin${i}" value="${sueldos[p]?.min || ''}"></td>
+        <td><input type="number" min="0" id="smax${i}" value="${sueldos[p]?.max || ''}"></td></tr>`).join('')}
+    </table>
+    <button class="prim" id="pGuardar">Guardar</button>
+    <div class="error" id="pError"></div>`;
+  $('pGuardar').onclick = async () => {
+    const nuevo = {};
+    PUESTOS.forEach((p, i) => { nuevo[p] = { min: $('smin' + i).value, max: $('smax' + i).value }; });
+    $('pGuardar').disabled = true; $('pError').textContent = '';
+    try {
+      sueldos = (await api({ accion: 'sueldos', sueldos: nuevo })).sueldos;
+      pintar(); cerrarDetalle();
+    } catch (err) {
+      $('pError').textContent = err.message; $('pGuardar').disabled = false;
+    }
+  };
+  $('fondo').classList.remove('oculto');
+  $('detalle').classList.remove('oculto');
+}
+
+function cerrarDetalle() {
+  $('fondo').classList.add('oculto');
+  $('detalle').classList.add('oculto');
+}
+
+async function guardar(c) {
+  const btn = $('dGuardar');
+  btn.disabled = true; btn.textContent = 'Guardando…';
+  $('dError').textContent = '';
+  try {
+    const etapa = $('dEtapa').value, notas = $('dNotas').value;
+    await api({ accion: 'actualizar', id: c.ID, etapa, notas });
+    c.Etapa = etapa; c.Notas = notas;
+    c.ActualizadoPor = cred.usuario;
+    c.FechaActualizacion = new Date().toLocaleString('sv-SE', { timeZone: 'America/Tijuana' }).slice(0, 16);
+    pintar();
+    cerrarDetalle();
+  } catch (err) {
+    $('dError').textContent = err.message;
+    btn.disabled = false; btn.textContent = 'Guardar';
+  }
+}
+</script>
+</body>
+</html>
