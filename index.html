@@ -277,7 +277,13 @@
       <option>Pastelero(a)</option>
       <option>Ayudante de producción</option>
       <option>Limpieza</option>
+      <option>Administrativo</option>
+      <option>Otro</option>
     </select>
+    <div id="puestoOtroBox" class="oculto">
+      <label class="campo" for="PuestoOtro">¿En qué área te gustaría trabajar o en qué eres bueno(a)? <span class="req">*</span></label>
+      <input type="text" id="PuestoOtro" name="PuestoOtro" placeholder="Ej. decoración de pasteles, ventas, redes sociales">
+    </div>
   </div>
 
   <div class="card">
@@ -445,6 +451,9 @@ form.querySelectorAll('input[name=Experiencia]').forEach(r =>
   r.addEventListener('change', () =>
     document.getElementById('expDetalle').classList.toggle('oculto', r.value !== 'Sí' || !r.checked)));
 
+form.Puesto.addEventListener('change', () =>
+  document.getElementById('puestoOtroBox').classList.toggle('oculto', form.Puesto.value !== 'Otro'));
+
 form.querySelectorAll('input[name=FamiliarJacobo]').forEach(r =>
   r.addEventListener('change', () =>
     document.getElementById('famDetalle').classList.toggle('oculto', r.value !== 'Sí' || !r.checked)));
@@ -482,7 +491,8 @@ form.addEventListener('submit', async e => {
     FamiliarJacobo: valorGrupo('FamiliarJacobo'),
     FamiliarNombre: form.FamiliarNombre.value.trim(),
     TiempoTraslado: valorGrupo('TiempoTraslado'),
-    Compromisos: valorGrupo('Compromisos')
+    Compromisos: valorGrupo('Compromisos'),
+    PuestoOtro: form.Puesto.value === 'Otro' ? form.PuestoOtro.value.trim() : ''
   };
 
   const faltan = [];
@@ -494,6 +504,7 @@ form.addEventListener('submit', async e => {
   if (!datos.Escolaridad) faltan.push('grado de estudios');
   if (!datos.TrabajaActualmente) faltan.push('si trabajas actualmente');
   if (!datos.Puesto) faltan.push('puesto');
+  if (datos.Puesto === 'Otro' && !datos.PuestoOtro) faltan.push('en qué área te gustaría trabajar');
   if (!datos.Sucursal) faltan.push('sucursal');
   ['Experiencia','Turnos','Dias','InicioInmediato','TarjetaSalud','FinesSemana','Festivos','FamiliarJacobo','Compromisos'].forEach(k => {
     if (!datos[k]) faltan.push({Experiencia:'experiencia',Turnos:'turnos',Dias:'días',InicioInmediato:'inicio inmediato',TarjetaSalud:'tarjeta de salud',FinesSemana:'fines de semana',Festivos:'días festivos',FamiliarJacobo:'familiar en Jacobo',Compromisos:'compromisos fijos'}[k]);

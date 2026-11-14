@@ -351,7 +351,7 @@
 <script>
 const API_URL = 'https://script.google.com/macros/s/AKfycbzTvsmXs-4g7eOthttBpAcDPyZnyR0nlIsBQBoUuWoZnwPgpOwS42LJsDv-RVk8_SJaRQ/exec';
 const ETAPAS = ['Nuevo', 'En revisión', 'Entrevista', 'Contratado', 'Descartado'];
-const PUESTOS = ['Embajador(a) / Atención a cliente', 'Barista', 'Panadero(a)', 'Pastelero(a)', 'Ayudante de producción', 'Limpieza'];
+const PUESTOS = ['Embajador(a) / Atención a cliente', 'Barista', 'Panadero(a)', 'Pastelero(a)', 'Ayudante de producción', 'Limpieza', 'Administrativo'];
 const PRODUCCION = ['Panadero(a)', 'Pastelero(a)'];
 let sueldos = {};
 
@@ -509,7 +509,7 @@ function pintar() {
       <td>${ptsHtml(ev)}</td>
       <td>${esc(c.Fecha.slice(0, 10))}</td>
       <td>${esc(c.Nombre)}${ev.fallas.length ? '<span class="nocumple">No cumple indispensables</span>' : ''}${anteriores(c).length ? '<span class="rep">Ya aplicó antes</span>' : ''}</td>
-      <td>${esc(c.Puesto)}</td>
+      <td>${esc(c.Puesto)}${c.PuestoOtro ? ' — ' + esc(c.PuestoOtro) : ''}</td>
       <td>${esc(c.Sucursal)}</td>
       <td class="col-opc">${sn(c.Experiencia)}</td>
       <td class="col-opc">${sn(c.InicioInmediato)}</td>
@@ -530,7 +530,7 @@ function abrirDetalle(id) {
     ['Transporte', esc(c.Transporte) || '—'],
     ['Escolaridad', esc(c.Escolaridad) || '—'],
     ['Trabaja actualmente', sn(c.TrabajaActualmente) || '—'],
-    ['Puesto', esc(c.Puesto)],
+    ['Puesto', esc(c.Puesto) + (c.PuestoOtro ? ' — ' + esc(c.PuestoOtro) : '')],
     ['Sucursal', esc(c.Sucursal)],
     ['Experiencia', sn(c.Experiencia)],
     ['Detalle experiencia', esc(c.ExperienciaDetalle) || '—'],
